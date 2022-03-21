@@ -6,7 +6,30 @@ DBの構造と、発行するクエリに差分があった方が、GraphQLの�
 
 ![table](example.png)
 
-## テストした内容
+## 見どころ
+
+`app/graphql/types/query_type.rb`
+
+飛んできたクエリをハンドリングしてるところです
+
+## つまづきどころ
+
+apimodeで作ったため、GraphQLのエディタを出すために、application.rb をいじっています。
+
+## 一応使い方
+
+```sh
+bin/bundle install
+
+bin/rails db:create
+bin/rails db:migrate
+bin/rails db:seed
+
+bin/rails server
+open http://127.0.0.1:3000/graphide # ここで色々とqueryが書けて便利
+```
+
+## 実際のクエリと結果
 
 ### Case1
 
