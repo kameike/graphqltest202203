@@ -22,3 +22,28 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+```
+{
+  rootOrganizations {
+    id
+    name
+  }
+}
+
+{
+  "data": {
+    "rootOrganizations": [
+      {
+        "id": "1",
+        "name": "経営会議"
+      },
+      {
+        "id": "14",
+        "name": "z_club_スノボ"
+      }
+    ]
+  }
+}
+```
+
