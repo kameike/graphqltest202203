@@ -1,6 +1,8 @@
 # GraphQLを触ってみた
 
-DBの構造と、発行するクエリに差分があった方が、GraphQLのテストとして良いなと思ったので、木構造を触ることに
+会社でGraphQLを検証することになったので、一旦どのようなものか理解するため軽く触ります。
+
+DBの構造と発行するクエリに差分があった方が、GraphQLのテストとして良いなと思ったので、木構造を触ることに
 閉包テーブル（closure table）を扱うgemである、[closure_tree](https://github.com/ClosureTree/closure_tree) を入れて触ってみた。
 以下のような組織図を表すデータをseedに入れている。
 
@@ -167,8 +169,7 @@ open http://127.0.0.1:3000/graphide # ここで色々とqueryが書けて便利
 
 # 感想など
 
-- 結構柔軟に扱えて良さそう。
-- 特にフロントエンドにUsercaseを寄せられそうで良さそう。
-- ファイルのスコープや名前空間に関しては結構気をつけた方が良さそう。[Resolver](https://graphql-ruby.org/fields/resolvers.html)などで一定認知負荷は減らせそうだけども。
-  - 必要に応じて、実は複数エンドポイント作った方がいいかもしれないし（そうでもないかもしれない）
+- 結構柔軟に扱えて良さそう。特にフロントエンドにUsercaseを寄せられそうで良さそう。
+- ファイルのスコープや名前空間に関しては結構気をつけた方が良さそう。[Resolver](https://graphql-ruby.org/fields/resolvers.html)を分けることで一定認知負荷は減らせそう。
+  - 必要に応じて、実は複数エンドポイント作った方がいいかもしれない(?)
 - [名前空間](https://github.com/graphql/graphql-spec/issues/163)の議論は面白そうなので読む
