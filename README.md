@@ -2,8 +2,8 @@
 
 会社でGraphQLを検証することになったので、一旦どのようなものか理解するため軽く触ります。
 
-DBの構造と発行するクエリに差分があった方が、GraphQLのテストとして良いなと思ったので、木構造を触ることにしました。
-閉包テーブル（closure table）を扱うgemである、[closure_tree](https://github.com/ClosureTree/closure_tree) を利用しました。
+DBの構造と発行するクエリに差分があった方が、GraphQLのテストとして良いなと思ったので木構造を触ることにしました。
+閉包テーブル（closure table）を扱うgemである[closure_tree](https://github.com/ClosureTree/closure_tree) を利用しました。
 以下のような組織図を表すデータをseedに入れています。(closure_treeから書き出しもできて便利でした。)
 
 ![table](example.png)
